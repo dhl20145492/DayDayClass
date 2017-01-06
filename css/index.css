@@ -11,8 +11,8 @@
 }
 
 .clearfix {
-    overflow: auto;
-    _height: 1%
+    overflow: hidden;
+    _zoom: 1;
 }
 
 body {
@@ -82,7 +82,7 @@ body {
 #slide .pagination {
     position: absolute;
     z-index: 20;
-    bottom: 0.2222rem;
+    bottom: 0.4444rem;
     width: 100%;
     text-align: center;
     right: 0;
@@ -107,6 +107,7 @@ body {
 #content {
     width: 100%;
     position: relative;
+    margin-bottom: 4.1777rem;
 }
 
 #content .content-box {
