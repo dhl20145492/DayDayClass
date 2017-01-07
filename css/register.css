@@ -74,14 +74,22 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     text-align: right;
 }
 
-#header .h2 a{
+#header .h2 a {
     color: #fff;
+}
+
+/*logo*/
+#logo {
+    width: auto;
+    height: 16.3555rem;
+    background: url("../img/33icn_ttc168.png") no-repeat center center;
+    -webkit-background-size: 7.4666rem;
+    background-size: 7.4666rem;;
 }
 
 /*登录框*/
 #login {
     width: auto;
-    margin-top: 4.4444rem;
 }
 
 #login .username, #login .password {
@@ -96,7 +104,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 #login .password {
     border-bottom: 2px solid #e6e6e6;
-    position: relative;
 }
 
 #login .icon {
@@ -113,34 +120,59 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 #login .password .icon {
-    background: url("../img/35icn_输入验证码.png") no-repeat center center;
+    background: url("../img/32icn_password.png") no-repeat center center;
     -webkit-background-size: 1.9555rem;
     background-size: 1.9555rem;;
 }
 
 #login input {
     display: inline-block;
-    width: 15rem;
+    width: 90%;
     height: 95%;
     outline: none;
     border: none;
 }
 
-#login .get-code{
-    width: 10.6666rem;
-    outline: none;
-    border:none;
-    background-color: #e66d6d;
-    /*float: right;*/
-    color: #ffffff;
-    position: absolute;
-    right:0;
-    top: -0.044444rem;
+/*用户协议*/
+#protocol {
+    width: auto;
+    padding: 0 1.33333rem;
+    margin-top: 1.33333rem;
+    height: 1.06666rem;
+    line-height: 1.06666rem;
 }
 
-/*下一步按钮*/
+#protocol a {
+    display: inline-block;
+}
+
+#protocol a.checkbox {
+    width: 1.06666rem;
+    height: 1.06666rem;
+    background: url("../img/34_02勾框.png") no-repeat center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+#protocol a.checkbox.disagree {
+    background: url("../img/34_01空框.png") no-repeat center center;
+}
+
+#protocol span{
+    height: 1.06666rem;
+    line-height: 1.06666rem;
+    font-size:1.06666rem;
+    color: #979797;
+    margin-left: 0.4444rem;
+}
+
+#protocol span a{
+    color: #2c93e0;
+}
+
+/*登录按钮*/
 #submit {
-    margin: 4.4444rem auto 1.7777rem auto;
+    margin: 3.5555rem auto 1.7777rem auto;
     width: 13.3333rem;
     height: 3.5555rem;
 }
@@ -149,7 +181,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     color: #ffffff;
     width: 100%;
     height: 100%;
-    background-color: #C8C8C8;
+    background-color: #c8c8c8;
     border-radius: 0.4444rem;
     outline: none;
     border: none;

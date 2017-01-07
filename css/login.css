@@ -74,6 +74,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     text-align: right;
 }
 
+#header .h2 a{
+    color: #fff;
+}
+
 /*logo*/
 #logo{
     width:auto;
