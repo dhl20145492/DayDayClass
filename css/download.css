@@ -14,9 +14,10 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
     font-weight: 400;
+    /*position: relative;*/
 }
 
 img {
@@ -78,3 +79,89 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 #header .h2 a {
     color: #fff;
 }
+
+/*二维码区域*/
+#QR-code {
+    width: 14.2222rem;
+    height: 14.2222rem;
+    margin: 6.4rem auto 1.5111rem auto;
+}
+
+#QR-code img {
+    width: 14.2222rem;
+    height: 14.2222rem;
+}
+
+/*文字扫一扫*/
+#sweep {
+    width: 100%;
+    margin-bottom: 1.4222rem;
+}
+
+#sweep h2 {
+    color: #3d3d3d;
+    font-size: 1.4222rem;
+    line-height: 35px;
+    height: 35px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+/*推荐并分享*/
+#share {
+    width: 100%;
+    padding-bottom: 21.4444rem;
+}
+
+#share a {
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #d4461c;
+    font-size: 1.4222rem;
+    width: 20.4444rem;
+    height: 3.5555rem;
+    line-height: 3.5555rem;
+    text-align: center;
+    border-radius: 1.7777rem;
+    font-weight: 400;
+}
+
+/*footer*/
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*padding: 0 0.88889rem;*/
+    /*text-align: center;*/
+}
+
+#footer .img {
+    width: 100%;
+    margin-bottom: 1.68889rem;
+    text-align: center;
+}
+
+#footer .img img {
+    width: 30.2222rem;
+    height: 6.62222rem;
+}
+
+#footer .info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.77778rem;
+    color: #787878;
+    font-size: 1.06667rem;
+}
+
+
+/*解决当横屏时footer定位*/
+@media screen and (orientation: landscape) {
+    body {
+        min-height: 50rem;
+        position: relative;
+    }
+}
+
