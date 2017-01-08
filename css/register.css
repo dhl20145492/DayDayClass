@@ -127,7 +127,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 #login input {
     display: inline-block;
-    width: 90%;
+    width: 85%;
     height: 95%;
     outline: none;
     border: none;

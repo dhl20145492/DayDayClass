@@ -62,5 +62,13 @@
     document.oncontextmenu = new Function("event.returnValue=false;");
     document.onselectstart = new Function("event.returnValue=false;");
 </script>
+<script>
+//    测试跳转使用
+    var oBtn = document.getElementById('submit');
+    oBtn.onclick = function () {
+        window.location.href='setPassword.html';
+        return false;
+    }
+</script>
 </body>
 </html>
