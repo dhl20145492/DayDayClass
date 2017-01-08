@@ -29,6 +29,10 @@ a {
     color: #000;
 }
 
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 button, input, optgroup, select, textarea {
     color: inherit;
     font: inherit;
@@ -74,7 +78,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     text-align: right;
 }
 
-#header .h2 a{
+#header .h2 a {
     color: #fff;
 }
 
@@ -126,15 +130,15 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     border: none;
 }
 
-#login .get-code{
+#login .get-code {
     width: 10.6666rem;
     outline: none;
-    border:none;
+    border: none;
     background-color: #e66d6d;
     /*float: right;*/
     color: #ffffff;
     position: absolute;
-    right:0;
+    right: 0;
     top: -0.044444rem;
 }
 

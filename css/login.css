@@ -19,14 +19,19 @@ body {
     font-weight: 400;
 }
 
-img{
+img {
     vertical-align: middle;
     border: 0
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 button, input, optgroup, select, textarea {
@@ -49,11 +54,11 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     line-height: 4.2666rem;
 }
 
-#header .container{
+#header .container {
     width: 100%;
 }
 
-#header .arrow ,#header .arrow a,#header .h2{
+#header .arrow, #header .arrow a, #header .h2 {
     height: 100%;
     width: 33.3333%;
     display: block;
@@ -61,39 +66,39 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     color: #fff;
 }
 
-#header .arrow img{
+#header .arrow img {
     width: 0.88888rem;
     height: 1.5111rem;
 }
 
-#header .h2.login{
+#header .h2.login {
     text-align: center;
 }
 
-#header .h2.register{
+#header .h2.register {
     text-align: right;
 }
 
-#header .h2 a{
+#header .h2 a {
     color: #fff;
 }
 
 /*logo*/
-#logo{
-    width:auto;
+#logo {
+    width: auto;
     height: 16.3555rem;
-    background: url("../img/33icn_ttc168.png")no-repeat center center;
+    background: url("../img/33icn_ttc168.png") no-repeat center center;
     -webkit-background-size: 7.4666rem;
     background-size: 7.4666rem;;
 }
 
 /*登录框*/
 #login {
-    width:auto;
+    width: auto;
 }
 
-#login .username,#login .password{
-    width:auto;
+#login .username, #login .password {
+    width: auto;
     height: 4.2666rem;
     line-height: 4.2666rem;
     background-color: #fff;
@@ -102,30 +107,30 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     font-size: 1.2444rem;
 }
 
-#login .password{
+#login .password {
     border-bottom: 2px solid #e6e6e6;
 }
 
-#login .icon{
+#login .icon {
     display: inline-block;
     height: 100%;
     width: 1.9555rem;
     margin-right: 0.8888rem;
 }
 
-#login .username .icon{
-    background: url("../img/31icn_mob.png")no-repeat center center;
+#login .username .icon {
+    background: url("../img/31icn_mob.png") no-repeat center center;
     -webkit-background-size: 1.9555rem;
     background-size: 1.9555rem;;
 }
 
-#login .password .icon{
-    background: url("../img/32icn_password.png")no-repeat center center;
+#login .password .icon {
+    background: url("../img/32icn_password.png") no-repeat center center;
     -webkit-background-size: 1.9555rem;
     background-size: 1.9555rem;;
 }
 
-#login input{
+#login input {
     display: inline-block;
     width: 15rem;
     height: 95%;
@@ -134,13 +139,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 /*登录按钮*/
-#submit{
+#submit {
     margin: 4.4444rem auto 1.7777rem auto;
     width: 13.3333rem;
     height: 3.5555rem;
 }
 
-#submit input{
+#submit input {
     color: #ffffff;
     width: 100%;
     height: 100%;
@@ -152,11 +157,11 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 /*忘记密码*/
-#forget{
+#forget {
     margin-bottom: 5rem;
 }
 
-#forget a{
+#forget a {
     display: block;
     text-align: right;
     font-size: 1.2444rem;
