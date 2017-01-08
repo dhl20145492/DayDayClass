@@ -94,7 +94,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 .container .follow .img img {
-    border: none;
+    /*border: none;*/
     vertical-align: middle;
     position: absolute;
     top: 50%;
@@ -103,6 +103,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     width: 5.2444rem;
     height: 5.2444rem;
     border-radius: 50%;
+    border: 0.0888rem solid #e6e6e6;
 }
 
 .container .follow .info{
