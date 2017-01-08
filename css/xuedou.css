@@ -126,7 +126,7 @@ body {
 
 /*正在建设中*/
 #building {
-    margin-top: 4.4444rem;
+    margin: 4.4444rem auto;
     text-align: center;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 #building .text {
-    margin: 1.777778rem auto;
+    margin-top: 1.777778rem;
     color: #656565;
     font-size: 1.24444rem;
     display: inline-block;
