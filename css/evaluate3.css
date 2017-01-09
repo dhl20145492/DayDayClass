@@ -13,6 +13,11 @@
     _zoom: 1;
 }
 
+.hide{
+    display: none;
+}
+
+
 body {
     background-color: #f5f5f5;
     font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
@@ -105,6 +110,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     width: 100%;
     height: 6.9333rem;
     border-top: 0.08888rem solid #e6e6e6;
+    border-bottom: 0.08888rem solid #e6e6e6;
     background-color: #fff;
     position: relative;
 }
@@ -159,6 +165,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    /*display: inline-block;*/
 }
 
 .container .details .teacher .info .name h4 {
@@ -175,70 +182,150 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     -webkit-background-size: 100%;
     background-size: 100%;
     transition: all .2s ease;
+    text-align: center;
 }
 
 .container .details .teacher .info .details {
     margin-top: 0.7rem;
 }
 
-.container .details .student {
-    width: 100%;
-    /*height: 3.46667rem;*/
-    border-top: 0.08888rem solid #e6e6e6;
-    border-bottom: 0.08888rem solid #e6e6e6;
-    background-color: #ffffff;
-    position: relative;
-}
-
-.container .details .student .name, .container .details .student p {
-    color: #3c3b3b;
-    font-size: 1.2444rem;
-    height: 100%;
-    line-height: 3.46667rem;
-    display: inline-block;
-    padding: 0 1.33333rem;
-}
-
-.container .details .student .name {
-    padding: 0;
-}
-
-.container .details .student p {
-    color: #656565;
-}
-
-.container .details .student .date{
-    padding: 0 1.33333rem;
-    color: #656565;
-    font-size: 0.88888rem;
-    margin-bottom: 0.44444rem;
-}
-
-.container .details .student .reply{
-    background-color: #f0f0f0;
-    color: #646464;
-    width: 94.444%;
-    border-radius: 0.2rem;
-    margin: 1.3333rem auto 0.8888rem auto;
-    position: relative;
-}
-
-.container .details .student .reply .arrow{
+.container .flower-give {
     position: absolute;
-    top: -0.88rem;
-    left: 2.35555rem;
-    width: 1.64444rem;
-    height: 0.8888rem;
+    top: 1.299999rem;
+    right: 0.8888rem;
+    transition: all .2s ease;
 }
 
-.container .details .student .reply .content{
-    color: #646464;
+.container .flower-give .flower {
+    width: 4.4444rem;
+    height: 2.66666rem;
+    line-height: 2.66666rem;
+    background-color: #e66d6d;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.8888rem;
+    margin: 0 auto;
+}
+
+.container .flower-give .flower img {
+    width: 1.2444rem;
+    height: 1.3333rem;
+    margin-top: 0.6666rem;
+    margin-right: 0.44444rem;
+}
+
+.container .flower-give .text {
+    color: #787878;
+    font-size: 0.8888rem;
+    margin-top: 0.53333rem;
+    display: inline-block;
+}
+
+.container .flower-already {
+    position: absolute;
+    top: 1.299999rem;
+    right: 2.2222rem;
+    transition: all .2s ease;
+}
+
+.container .flower-already .flower {
+    width: 4.4444rem;
+    height: 2.66666rem;
+    line-height: 2.66666rem;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    color: #e66d6d;
+    font-size: 0.8888rem;
+    margin: 0 auto;
+}
+
+.container .flower-already .flower img {
+    width: 1.2444rem;
+    height: 1.3333rem;
+    margin-top: 0.6666rem;
+    margin-right: 0.44444rem;
+}
+
+.container .flower-already .text {
+    color: #787878;
+    font-size: 0.8888rem;
+    margin-top: 0.53333rem;
+    display: inline-block;
+}
+
+/*评价印象*/
+.container .impression {
+    width: 100%;
+    height: 12.26666rem;
+    border-top: 0.0888888rem solid #e6e6e6;
+    border-bottom: 0.0888888rem solid #e6e6e6;
+    background-color: #fff;
+}
+
+.container .impression .h3 {
+    width: 94.444%;
+    height: 3.64444rem;
+    line-height: 3.64444rem;
+    color: #656565;
     font-size: 1.24444rem;
-    line-height: 1.7777rem;
-    padding: 0.8888rem;
+    border-bottom: 0.0888888rem solid #e6e6e6;
+    margin: 0 auto;
 }
 
-.container .details .student .reply .content .teacher-name{
-    color: #2c93e0;
+.container .impression .h3 h3 {
+    padding: 0 0.44444rem;
 }
+
+.container .impression .impression-options {
+    height: 8.53333rem;
+    width: 94.444%;
+    margin: 0 auto;
+}
+
+.container .impression .impression-options .line {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .impression .impression-options .line .option {
+    width: 8.711111rem;
+    height: 2.4888888rem;
+    line-height: 2.4888888rem;
+    text-align: center;
+    border: 0.0888888rem solid #e6e6e6;
+    border-radius: 0.4444rem;
+    margin-top: 0.977777rem;
+    color: #646464;
+}
+
+.container .impression .impression-options .line .option.selected {
+    background-color: #2c93e0;
+    color: #ffffff;
+}
+
+/*底部提交按钮*/
+#btn {
+    width: 100%;
+    height: 4.266666rem;
+    line-height: 4.266666rem;
+    background-color: #2c93e0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
 
