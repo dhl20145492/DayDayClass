@@ -74,6 +74,11 @@
             </div>
         </div>
     </div>
+    <div class="input">
+        <textarea name="" id="text" maxlength="100"
+                  onkeyup="javascript:setShowLength(this, 100, 'limit');">老师水平怎么样？教学效果好不好？说说你的感受吧！</textarea>
+        <span class="limit" id="limit">32/100字</span>
+    </div>
 </div>
 
 <div id="btn">
@@ -89,22 +94,45 @@
     var aOption = document.getElementsByClassName('option');
     var oGiveFlower = document.getElementsByClassName('flower-give')[0];
     var oAlreadyGive = document.getElementsByClassName('flower-already')[0];
+    var oTextarea = document.getElementById('text');
 
     for (var i = 0; i < aOption.length; i++) {
         aOption[i].onclick = function () {
-            toggleClass(this,'selected');
+            toggleClass(this, 'selected');
         }
     }
 
     oGiveFlower.onclick = function () {
-        toggleClass(this,'hide');
-        toggleClass(oAlreadyGive,'hide');
+        toggleClass(this, 'hide');
+        toggleClass(oAlreadyGive, 'hide');
     };
 
     oAlreadyGive.onclick = function () {
-        toggleClass(this,'hide');
-        toggleClass(oGiveFlower,'hide');
+        toggleClass(this, 'hide');
+        toggleClass(oGiveFlower, 'hide');
     };
+
+    oTextarea.onfocus = function () {
+        var str = '老师水平怎么样？教学效果好不好？说说你的感受吧！';
+        if (this.innerHTML == str) {
+            this.innerHTML = '';
+        }
+    };
+
+    oTextarea.onblur = function () {
+        if (this.innerHTML == '') {
+            this.innerHTML = '老师水平怎么样？教学效果好不好？说说你的感受吧！';
+        }
+    };
+
+    function setShowLength(obj, maxlength, id) {
+        var rem = obj.value.length;
+        var wid = id;
+        if (rem < 0) {
+            rem = 0;
+        }
+        document.getElementById(wid).innerHTML = rem + '/' + maxlength + '字';
+    }
 
     function hasClass(obj, cls) {
         return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
@@ -121,10 +149,10 @@
         }
     }
 
-    function toggleClass(obj,cls){
-        if(hasClass(obj,cls)){
+    function toggleClass(obj, cls) {
+        if (hasClass(obj, cls)) {
             removeClass(obj, cls);
-        }else{
+        } else {
             addClass(obj, cls);
         }
     }
