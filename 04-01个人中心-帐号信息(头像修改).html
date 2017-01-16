@@ -89,7 +89,12 @@
                 $('#mask').toggle();
                 $('#mask').css('opacity','0');
                 $('#foot').slideUp(300);
-            })
+            });
+            $(document).on('scroll',function () {
+            $('#mask').toggle();
+            $('#mask').css('opacity','0');
+            $('#foot').slideUp(300);
+        })
         }
     );
 </script>

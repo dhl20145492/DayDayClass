@@ -11,17 +11,23 @@ body {
 }
 #info{
     width: 100%;
-    height: 18.9rem;
+    height: 18rem;
     background-image: url("../img/换肤图片/换肤1友谊唯美720.jpg");
     background-repeat: no-repeat;
-    background-size: 32rem 18.8rem;
+    background-size: 100% 18.8rem;
     background-position: center center;
     overflow: hidden;
     position: relative;
     color: rgb(255,255,255);
     font-size: 1.24rem;
 }
-
+/*#imgmain{
+	position:absolute;
+	top:0;
+	display:block;
+	width:100%;
+	height: 18.6rem;
+}*/
 #headImage{
     display: block;
     width: 6.66rem;
@@ -84,10 +90,10 @@ body {
     height: 2.8rem;
     background-color: rgb(230,230,230);
     top: 1.55rem;
-    left: 8rem;
+    left: 10.6rem;
 }
 .line.right{
-    left: 16rem;
+    left: 21.33rem;
 }
 #content{
     width: 100%;
@@ -97,6 +103,7 @@ body {
 .main1{
     width: 100%;
     height: 10rem;
+    font-size: 1.4285rem;
 }
 .null{
     width: 100%;
