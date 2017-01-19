@@ -200,10 +200,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 .footer {
     width: 94.44%;
     height: 4.27rem;
-    position: absolute;
+    position: fixed;
     bottom: 0.89rem;
     left: 50%;
-    margin-left:-47.22%;
+    margin-left: -47.22%;
     background: #e66d6d;
     font-size: 1.6rem;
     color: #FFFFFF;
